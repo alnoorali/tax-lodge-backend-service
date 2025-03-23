@@ -1,0 +1,31 @@
+const Service = {
+    id: 0,
+    main_image: '',
+    main_heading: '',
+    main_heading_content: '',
+    service_box_heading_1: '',
+    service_box_content_1: '',
+    service_box_heading_2: '',
+    service_box_content_2: '',
+    service_box_heading_3: '',
+    service_box_content_3: '',
+    service_box_heading_4: '',
+    service_box_content_4: '',
+    main_heading_2: '',
+    main_heading_content_2: '',
+    main_heading_3: '',
+    main_heading_content_3: '',
+    main_heading_3_image: '',
+    main_heading_3_point_1: '',
+    main_heading_3_point_2: '',
+    main_heading_3_point_3: '',
+    main_heading_3_point_4: '',
+    main_heading_4: '',
+    main_heading_content_4: '',
+    createdby: 1,
+    createdon: new Date(),
+    modifiedby: 1,
+    modifiedon: new Date()
+}
+
+module.exports = Service;
