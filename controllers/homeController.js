@@ -19,7 +19,7 @@ const getHome = async (req, res) => {
 };
 
 const updateHome = async (req, res) => {
-    const { tagline, banner_heading, banner_content, about_main_heading, about_main_heading_content, 
+    const { banner_tagline, banner_heading, banner_content, about_main_heading, about_main_heading_content, 
         about_sub_heading, about_sub_heading_content, work_steps_heading_1, work_steps_content_1, work_steps_heading_2, 
         work_steps_content_2, work_steps_heading_3, work_steps_content_3, why_choose_heading, why_choose_box_heading_1, 
         why_choose_box_content_1, why_choose_box_heading_2, why_choose_box_content_2, why_choose_box_heading_3, why_choose_box_content_3, 
@@ -30,7 +30,7 @@ const updateHome = async (req, res) => {
 
     try {
         Home.id = 1,
-        Home.banner_tagline = tagline;
+        Home.banner_tagline = banner_tagline;
         Home.banner_heading = banner_heading;
         Home.banner_content = banner_content;
         Home.about_main_heading = about_main_heading;

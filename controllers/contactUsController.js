@@ -13,7 +13,7 @@ const getContactUs = async (req, res) => {
         return res.status(200).json(results[0]);
     } catch (err) {
         console.error('Error in getContactUs:', err);
-        WriteError("aboutUsController", "getContactUs", "Error", err);
+        WriteError("contactUsController", "getContactUs", "Error", err);
         res.status(500).json({ error: 'Internal Server Error' });
     }
 };
@@ -64,7 +64,7 @@ const updateContactUs = async (req, res) => {
         return res.status(200).json({ errorCode: "000", message: 'Record updated successfully' });
     } catch (err) {
         console.error('Error in updateContactUs:', err);
-        WriteError("aboutUsController", "updateContactUs", "Error", err);
+        WriteError("contactUsController", "updateContactUs", "Error", err);
         res.status(500).json({ error: 'Internal Server Error' });
     }
 };

@@ -12,6 +12,7 @@ const termsConditionsRoutes = require('./routes/terms_conditions');
 const privacyPolicyRoutes = require('./routes/privacy_policy');
 const refundPolicyRoutes = require('./routes/refund_policy');
 const contactUsRoutes = require('./routes/contact_us');
+const contactFormRoutes = require('./routes/contact_form');
 
 dotenv.config();
 
@@ -54,6 +55,7 @@ app.use('/api/terms-conditions', termsConditionsRoutes);
 app.use('/api/privacy-policy', privacyPolicyRoutes);
 app.use('/api/refund-policy', refundPolicyRoutes);
 app.use('/api/contact-us', contactUsRoutes);
+app.use('/api/contact-form', contactFormRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
